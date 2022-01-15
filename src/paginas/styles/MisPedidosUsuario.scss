@@ -1,0 +1,23 @@
+$Mis-pedidos-color-fondo:#ff9aa2;
+$Mis-pedidos-color-plomo: #707070;
+$Mis-pedidos-color-verde:  #c70039;
+$Mis-pedidos-color-verde-hover: #900c3f;
+$Mis-pedidos-color-azul: #42B9FE;
+
+.MisPedidosUsuario{ 
+    background: $Mis-pedidos-color-fondo;
+    padding-bottom: 15px;
+}
+.container-mis-pedidos{display: grid;
+grid-template-columns: 1fr;
+grid-gap: 10px;
+}
+
+.MisPedidosUsuario h1{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}

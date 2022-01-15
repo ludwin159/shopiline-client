@@ -1,0 +1,24 @@
+.componente-container-mapa{
+    background: #900c3f; 
+}
+
+.container-mapa-empresa{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 92%;
+    margin: auto;
+    max-width: 860px;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+}
+.titulo-ubicanos{
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: white ;
+}
+.mapa-empresa{
+    border-radius: 5px;
+    border: 1px solid white ;
+    width: 100%;
+    height: 200px;
+}

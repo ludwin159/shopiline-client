@@ -1,0 +1,91 @@
+
+$color-fondo-registro:#ff9aa2;
+$color-texto-primario-registro: white;
+$color-boton-registro:#c70039;
+$color-boton-registro-hover: #900c3f;
+$color-borde-registro: #ffffff;
+
+.Registro{
+    background: $color-fondo-registro;
+
+}
+.contenedor-registro{
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: $color-texto-primario-registro;
+    min-height: 100vh;
+    max-width: 400px;
+    
+    
+}
+
+.contenedor-registro h1{
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-shadow: 0.2px 0.2px white;
+}
+.registro-input{
+    margin-bottom: 0.8 rem;
+    margin-bottom: 0.5rem;
+
+
+}
+.registro-input input{
+    width: 90%;
+    outline:none;
+    border-radius: 6px;
+    border: 1px solid $color-borde-registro;
+    height: 2.5rem;
+    padding-left: 0.8rem;
+    box-shadow: 0px 3px 6px 0px $color-borde-registro ;
+    margin-bottom: 15px;
+}
+.registro-input input:hover{
+    font-weight: bold;
+}
+
+.registro-input p{
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+}
+
+
+.registro-input button{
+    width: 90%;
+    margin: auto;
+    outline: none ;
+    margin-top: 1.5rem;
+    height: 2.8rem;
+    border: 1px solid $color-borde-registro;
+    border-radius: 6px;
+    background: $color-boton-registro;
+    color: $color-texto-primario-registro;
+    box-shadow: 0px 3px 5px 0px $color-borde-registro;
+    font-size: 1.5rem;
+
+}
+.registro-input button:hover{
+    font-weight: bold;
+    background-color: $color-boton-registro-hover;
+
+}
+
+.registro-con-google img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.desaparecer{
+    display: none;
+}
+
+.contenedor-se-Registro-correcto{
+    display: none;
+}
+
+.aparecer{
+    display: block;
+
+}

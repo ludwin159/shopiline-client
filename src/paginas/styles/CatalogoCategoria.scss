@@ -1,0 +1,30 @@
+
+
+ $colorFondoCatalogocategoriaitem: #ffa9a2;
+.catalogo-categoria-item{
+    background: $colorFondoCatalogocategoriaitem;
+
+}
+.container-catalogo-categoria-item{
+   max-width: 900px;
+   width: 97%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+
+}
+.container-catalogo-categoria-item h1{
+    color: snow;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+@media screen and (min-width:768px){
+    .container-productos-categoria-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+}

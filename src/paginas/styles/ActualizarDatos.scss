@@ -1,0 +1,84 @@
+$color-relleno-fondo-actualizar-datos: #ff9aa2;
+$color-texto-actualizar-datos: #FFFFFF;
+$color-borde-actualizar-datos:#ffffff;
+$color-boton-actualizar-datos: #c70039;
+$color-boton-actualizar-datos-hover: #900c3f;
+
+.container-actualizar-datos{
+    background: $color-relleno-fondo-actualizar-datos ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-height: 100vh;
+}
+.actualizar-datos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.4rem;
+    width: 90%;
+    margin: auto;
+    max-width: 550px;
+    color: $color-texto-actualizar-datos;
+}
+.actualizar-datos  h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0px;;
+}
+
+.actualizar-datos h4{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    
+}
+.actualizar-datos input{
+    height: 2.4rem;
+    border-radius: 5px;
+    border: 1px solid $color-borde-actualizar-datos;
+    outline: none;
+    padding-left: 10px;
+    display: grid;
+    align-content: center;
+    box-shadow: 1px 1px 4px 1px $color-borde-actualizar-datos;
+}
+.actualizar-datos input:hover{
+    font-weight: bold;
+}
+
+.actualizar-datos button{
+    margin-top: 10px;
+    height: 2.5rem;
+    background: $color-boton-actualizar-datos;
+    color: $color-texto-actualizar-datos;
+    font-size: 1.5rem;
+    display: grid;
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid $color-borde-actualizar-datos;
+    box-shadow: 0 0 3px 0px $color-borde-actualizar-datos
+
+}
+.actualizar-datos button:hover{
+ font-weight: bold;
+ background: $color-boton-actualizar-datos-hover;
+ outline: none;
+}
+.actualizar-datos button:focus{
+    outline: none;
+}
+
+.Link-cancelar-actualizar{
+    color: $color-texto-actualizar-datos;
+}
+.Link-cancelar-actualizar:hover{
+    color: $color-texto-actualizar-datos;
+    text-decoration: none;
+}
+@media screen and( max-width: 333px){
+    .actualizar-datos  h1{
+        font-size: 1.5rem;
+    }
+    .actualizar-datos h4{
+        font-size: 1.2rem;
+    }
+}

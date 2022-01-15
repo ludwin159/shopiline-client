@@ -1,0 +1,155 @@
+$color-fondo-realizar-pedido: #ff9aa2;
+$verde-texto-realizar-pedido: #ffffff;
+$color-boton-realizar-pedido: #c70039;
+$color-boton-realizar-pedido-hover: #900c3f;
+$color-plomo-realizar-pedido: #707070;
+$color-azul-realizar-pedido: #c93818;
+
+
+.realizar-pedido{
+    background: $color-fondo-realizar-pedido;
+}
+.container-realizar-pedido{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 7px;
+    color: white;
+    width: 92%;
+    margin: auto;
+    max-width: 468px;
+}
+.titulo-realizar-pedido{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.container-departamento, 
+.container-provincia,
+.container-distrito
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container-departamento h4,
+.container-provincia h4,
+.container-distrito h4
+{
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
+.container-departamento select,
+.container-provincia select,
+.container-distrito input
+{
+    padding: 4px;
+    padding-left: 15px;
+    height: 2.3rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background: white;
+    color: $color-plomo-realizar-pedido;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px $color-plomo-realizar-pedido;
+}
+
+.container-dato-realizar-pedido{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.container-dato-realizar-pedido h4{
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
+.container-realizar-pedido input, .container-realizar-pedido select{
+    padding: 4px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    background: white;
+    color: $color-plomo-realizar-pedido;
+    outline: none;
+    box-shadow: 1px 1px 3px 1px $color-plomo-realizar-pedido;
+    border: 1px solid $color-plomo-realizar-pedido;
+}
+.container-realizar-pedido select:has {
+    background: $color-azul-realizar-pedido;
+}
+
+.titulo-fecha-estimada{
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+}
+
+.fecha-estimada{
+    text-align: center;
+    background: $color-azul-realizar-pedido;
+    border-radius: 6px;;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    margin-bottom: 0;
+}
+.titulo-total-realizar-pedido{
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+}
+.total-realizar-pedido{
+    font-size: 1.4rem;
+    background: $color-azul-realizar-pedido;
+    padding: 0.4rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.boton-realizar-pedido,.Boton-Mi-Inicio{
+    background: $color-boton-realizar-pedido;
+    color: white;
+    border-radius: 6px;
+    height: 3rem;
+    font-size: 1.3rem;
+    border: 1px solid $verde-texto-realizar-pedido;
+    box-shadow: 1px 1px 3px 1px $color-plomo-realizar-pedido;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    outline: none;
+
+}
+.boton-realizar-pedido:hover,.Boton-Mi-Inicio:hover{
+    font-weight: bold;
+    background: $color-boton-realizar-pedido-hover;
+    outline: none;
+}
+
+.container-Pedido-Correcto{
+    display: none;
+    width: 85%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container-Pedido-Correcto h1{
+    color: white;
+}
+.container-Pedido-Correcto img{
+    width: 100%;
+    margin: auto;
+    max-width: 350px;
+}
+
+.Link-to-usuario{
+    color: white;
+}
+.Link-to-usuario:link{
+    color: white;
+    text-decoration: none;
+}
+.Link-to-usuario:hover{
+    color: white;
+}
+

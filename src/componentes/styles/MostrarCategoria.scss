@@ -1,0 +1,35 @@
+$verde-categoria:#900c3f;
+$blanco-categoria: snow;
+$borde-color: #707070;
+
+
+.categoria{
+    width: 100%;
+    background: #dcedf3;
+    color: $verde-categoria ;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 0 4px 1px $borde-color ;
+}
+.categoria:hover{
+    box-shadow: 0 0 7px 4px $borde-color ; 
+}
+.nombre-categoria{
+    font-size: 1.7rem;
+    
+}
+
+.categoria:hover{
+    background: $verde-categoria;
+    color: $blanco-categoria;
+} 
+
+.imagen-Categoria{
+    width: 100%;
+    border-radius: 5px;;
+} 
+.link-categoria:hover{
+    text-decoration: none;
+}

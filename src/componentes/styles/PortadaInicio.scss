@@ -1,0 +1,20 @@
+.container-productos{
+width: 100%;
+margin: auto;
+max-width: 900px;
+padding: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-gap: 10px;
+}
+
+.PortadaInicio{
+    background:#ff9aa2 ;
+}
+
+@media screen and (max-width: 768px){
+    .container-productos{
+        grid-template-columns: 1fr;
+    }
+}

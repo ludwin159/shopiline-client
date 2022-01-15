@@ -1,0 +1,98 @@
+$color-bode-footer: #707070 ;
+$color-fondo-footer: #900c3f;
+$color-blanco-footer: #ffffff;
+
+.container-footer{
+    background: $color-fondo-footer;
+
+}
+
+.footer-empresa{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    padding-right: 10px ;
+    max-width: 856px;
+    margin: auto;
+}
+.container-footer{
+    max-width: 856px;
+    margin: auto;
+}
+.container-banner-empresa{
+background: white;
+text-align: center;
+border-radius: 5px;
+
+}
+.imagen-banner-empresa{
+    width: 100%;
+    
+}
+
+.imagen-logo-empresa{
+    width: 90%;
+    max-width: 140px;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    margin:auto;
+}
+
+.container-redes img{
+ width: 35px;
+}
+.container-redes img:nth-child(1):hover{
+ border-radius: 5px;
+ box-shadow: 0 0 3px 0px white;
+
+}
+.redes-sociales{
+
+    display: grid;
+    padding-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-telefono{
+    letter-spacing: 2px;
+    color: $color-blanco-footer;
+    padding-top: 0.5rem;
+}
+.container-telefono img{
+    margin-right: 1rem;
+}
+.container-direccion{
+    color: $color-blanco-footer;
+    padding-top: 0.3rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.container-direccion p{
+    margin-bottom: 0px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width:768px){
+    .footer-empresa{
+        grid-template-columns: 5fr 5fr;
+    }
+    .container-direccion p{
+        font-size: 0.8rem;
+        
+    }
+    .container-telefono{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width:300px){
+    .container-redes img{
+        width: 25px;
+       }
+}

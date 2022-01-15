@@ -1,0 +1,100 @@
+$color-detalle-pedido: #707070;
+$color-boton-pedido: #c70039;
+$color-boton-pedido-hover: #900c3f;
+$color-precio-total-pedido: #c93818;
+.producto-carrito-presentado{
+    width: 96%;
+    max-width: 668px;
+    margin: auto;
+    display: grid;
+    grid-column-gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background: white;
+    grid-template-areas: 
+    "imagen nombre nombre"
+    "imagen detalle detalle"
+    "imagen precio precio"
+    "imagen cantidad cantidad"
+    "eliminar subtotal subtotal";
+    margin-top: 7px;
+}
+
+.producto-imagen{
+    width: 150px;
+    grid-area: imagen;
+    border: 1px solid $color-detalle-pedido;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px $color-detalle-pedido;
+    display: grid;
+    justify-self: center;   
+    align-self: center;
+}
+
+.producto-nombre{
+    grid-area: nombre;
+    color: $color-boton-pedido;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.producto-detalle{
+    grid-area: detalle;
+    color: $color-detalle-pedido;
+    font-size: 1.2rem ;
+    text-align: center;
+}
+
+.producto-precio{
+    grid-area: precio;
+    font-size: 1.3rem;
+    color: $color-boton-pedido-hover;
+}
+
+.producto-precio small{
+    font-size: 1.2rem;
+    color: $color-precio-total-pedido;
+}
+
+.producto-cantidad{
+    grid-area: cantidad;
+    font-size: 1.3rem;
+    color: $color-boton-pedido-hover;
+}
+.producto-cantidad small{
+    font-size: 1.2rem;
+    color: $color-precio-total-pedido;
+}
+
+.producto-subtotal{
+    grid-area: subtotal;
+    text-align: center;
+    background: $color-precio-total-pedido;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 3px;
+    width: 100%;
+    
+
+}
+
+.producto-boton-eliminar{
+    grid-area: eliminar;
+    border-radius: 5px;
+    color: white;
+    background: #c70039;
+    font-size: 1.2rem;
+    border: 1px solid $color-detalle-pedido;
+    box-shadow: 1px 1px 3px 1px $color-detalle-pedido;
+    height: 2rem;
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+    
+}
+.producto-boton-eliminar:hover{
+    background: $color-boton-pedido-hover;
+    outline: none;
+}
+

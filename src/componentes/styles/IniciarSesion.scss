@@ -1,0 +1,162 @@
+
+$color-fondo-login:#ff9aa2;
+$color-texto-primario-login: white;
+$color-texto-secundario-login: #1C1D23;
+$color-boton-login:#c70039;
+$color-texto-primario-login-hover: #900c3f;
+$color-boton-registrarse: #ff5733;
+$color-boton-registrarse-hover: #c93818;
+$color-borde-sesion: #707070;
+.titulo-login{
+color: $color-texto-primario-login;
+font-weight: bold;
+font-size: 1.8rem;
+
+}
+
+.Login{
+    padding-top: 5vh;
+    min-height: 100vh;
+    margin: auto;
+    max-width: 450px;
+}
+
+.contenedor-login{
+    background: $color-fondo-login;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+.Login p{
+    font-size: 1.3rem;
+    color: $color-texto-primario-login;
+    text-align: left;
+    padding-left: 3.5%;
+    margin-bottom: 0.5rem;
+}
+.Login input{
+    width: 93%;
+    margin-bottom: 30px;
+    height: 2.5rem;
+    border: 1px solid $color-borde-sesion;
+    border-radius: 6px;
+    padding-left: 10px;
+    box-shadow: 0px 3px 6px 0px $color-borde-sesion ;
+    outline:none;
+}
+.Login input:hover{
+    font-weight: bold;
+    outline:none;
+
+}
+.imgLogoUsuario{
+    width: 40%;
+}
+.boton-inicio-sesion {
+    width: 93%;
+    height: 3rem;
+    color: $color-texto-primario-login;
+    background: $color-boton-login;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid $color-borde-sesion;
+    box-shadow: 0px 3px 6px 0px $color-borde-sesion ;
+    outline: none;
+    margin-top: 15px;
+
+
+}
+.boton-inicio-sesion:hover{
+    font-weight: bold;
+    background: $color-texto-primario-login-hover;
+    outline: none;
+
+}
+
+.boton-Google{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+.LogoGoogle{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.contenedor-registro-admin{
+    width: 93%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+.registro{
+    width: 100%;
+    font-size: 1.5rem;
+
+}
+.registro button{
+    width: 100%;
+    background: $color-boton-registrarse;
+    color: $color-texto-primario-login;
+    border-radius: 6px;
+    border: 1px solid $color-borde-sesion;
+    box-shadow: 0px 3px 6px 0px $color-borde-sesion ;
+    height: 3rem;
+}
+.registro button:hover{
+    font-weight: bold;
+    background: $color-boton-registrarse-hover;
+    outline: none;
+
+}
+.ingreso-admin:hover{
+    font-weight: bold;
+    
+}
+
+.boton-opcion-cliente{
+    width: 60%;
+    height: 3rem;
+    color: $color-texto-primario-login;
+    background: $color-boton-login;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    border: 1px solid $color-borde-sesion;
+    box-shadow: 0px 3px 6px 0px $color-borde-sesion ;
+    outline: none;
+    margin-bottom: 1rem;
+}
+.boton-opcion-cliente:hover{
+    font-weight: bold;
+    font-size: 1.4rem;
+    background:$color-texto-primario-login-hover;
+    ;
+}
+
+.Login .input-password{
+    margin-bottom: 15px;
+}
+    
+.container-link-olvide-password{
+    text-align: left;
+    margin-left: 3%;
+    padding-top: 0.7rem;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    
+}
+
+.Link-olvide-password:hover{
+    font-weight: bold;
+}
+.Link-opcion-ver-pedidos{
+    color: white;
+}
+.Link-opcion-ver-pedidos:hover{
+    color: white;
+}
+.Link-opcion-ver-pedidos:link{
+    text-decoration: none;
+}

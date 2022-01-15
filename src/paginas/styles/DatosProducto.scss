@@ -1,0 +1,201 @@
+$color-fondo-producto:#ff9aa2;
+$color-texto-principal:#900c3f;
+$color-texto-secundario:#707070;
+$color-texto-plomo:#707070;
+
+.datos-producto{
+    background: #EBEAF5;
+    min-height: 100vh;
+
+}
+.container-producto{
+    width: 97%;
+    max-width: 820px;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 0.7rem;;
+    grid-column: 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.container-producto h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color: $color-texto-principal;
+    font-weight: bold;
+}
+.container-producto h2{
+   
+    font-size: 1.2rem;
+    text-align: center;
+    color: $color-texto-plomo;
+}
+.container-producto img{
+    width: 70%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 0px $color-texto-plomo;
+    max-width: 280px;
+}
+.container-precio-producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+.container-precio-producto h3:nth-child(1){
+    text-align: right;
+    color: $color-texto-principal ;
+}
+.container-precio-producto h3:nth-child(2){
+    text-align: left;
+    color: $color-texto-secundario;
+
+}
+.container-cantidad-producto{
+    display: grid;
+    grid-template-columns:  1fr 80px 1fr; 
+    grid-gap: 0.5rem;
+    width: 70%;
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+}
+.container-boton-agregar{
+   text-align: center; 
+}
+.container-cantidad-producto button{
+    border-radius: 6px;
+    border: 1.5px solid $color-texto-plomo;
+    background: white;
+    color: $color-texto-principal;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0px 0px 1px 0px $color-texto-plomo;
+   
+}
+
+
+.container-cantidad-producto> button:hover{
+    background: $color-texto-principal;
+    color: white;
+    outline: none;
+}
+.container-cantidad-producto button:nth-child(3){
+    width: 50%;
+    justify-self: left;
+}
+.container-cantidad-producto button:nth-child(1){
+    width: 50%;
+    justify-self: right;
+}
+
+
+.container-cantidad-producto input{
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    background: white;
+    border: none;
+    color: $color-texto-plomo;
+    font-weight: bold;
+    box-shadow: 0 0 2px 0 $color-texto-principal;
+    font-size: 1.2rem;
+}
+
+.boton-agregar-carrito{
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+}
+.boton-agregar-carrito,
+.container-Producto-agregado button{
+    margin-top: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background: #c70039;
+    border-radius: 7px;
+    border: 1px solid $color-texto-plomo;
+    box-shadow: 0 0 5px 0px $color-texto-plomo;
+}
+.boton-agregar-carrito:hover,
+.container-Producto-agregado button:hover{
+    font-size: 1.2rem;
+    background-color: #900c3f ;
+    outline: none;
+    
+}
+#container-aviso-carrito{
+    width: 90%;
+    margin: auto;
+    margin-top: 8px;
+    max-width: 400px;
+    
+}
+.container-Producto-agregado{
+    display: grid;
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+.container-Producto-agregado h3{
+    font-size: 1.5rem;
+    color: $color-texto-principal;
+    font-weight: bold;
+    text-shadow: 1px 1px $color-texto-principal;
+}
+
+
+@media screen and(min-width:768px){
+    .container-producto{
+        padding-top: 2.5rem;
+        grid-template-areas: 
+        "producto nombre"
+        "producto detalle"
+        "producto precio"
+        "cantidad botonCarrito"
+        ;
+    }
+    .container-producto h1{
+        grid-area: nombre;
+        align-self: flex-end;
+    }
+    .container-producto h2{
+        grid-area: detalle;
+        align-self: center;
+    }
+    .container-producto img{
+        grid-area: producto;
+    }
+    .container-producto .container-precio-producto{
+        grid-area: precio;
+    }
+    .container-boton-agregar{
+        grid-area: botonCarrito ;
+        margin-top: 0;
+    }
+    .container-producto .container-cantidad-producto{
+        grid-area: cantidad;
+    }
+
+}
+
+.Ir-a-Carrito{
+    display: grid;
+    
+
+}
+.Ir-a-Carrito:link{
+    text-decoration: none;
+
+}
+#Se-agrego-al-Carrito{
+    display: grid;}

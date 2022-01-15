@@ -1,0 +1,51 @@
+$color-detalle-pedido: #ffffff;
+$color-boton-pedido: #c70039;
+$color-boton-pedido-hover: #900c3f;
+$color-precio-total-pedido: #900c3f;
+
+
+.container-carrito-productos{
+    padding-top: 0.5rem;
+    background: #ff9aa2 ;
+    min-height: 100vh;
+    
+}
+.container-total{
+    max-width: 768px;
+    margin: auto;
+    padding: 10px;
+} 
+.container-total h2{
+    background: snow;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    color: $color-precio-total-pedido;
+}	
+.container-total button{
+width: 100%;
+padding: 5px;
+font-size: 1.8rem;
+border-radius: 5px;
+color:snow;
+background: $color-boton-pedido;
+border: 1px solid $color-detalle-pedido;
+box-shadow: 0 0 5px 1px $color-boton-pedido;
+}
+
+.container-total button:hover{
+    background: $color-boton-pedido-hover;
+    font-weight: bold;
+}
+
+.Link-realizar-Pedido{
+    color: white;
+}
+.Link-realizar-Pedido:hover{
+    color: white;
+}
+.Link-realizar-Pedido:link{
+    text-decoration: none;
+}

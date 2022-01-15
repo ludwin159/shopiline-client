@@ -1,0 +1,89 @@
+$color-fondo-buscador:#ff9aa2;
+$color-blanco-buscador: white;
+$color-oscuro-buscador: #1C1D23;
+$color-boton-buscador:#c70039;
+$color-hover-buscador: #900c3f;
+$color-borde-buscador: #ffffff;
+
+.container-buscar{
+    background: #ff9aa2;
+    padding: auto;
+    margin: auto;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.container-nav-buscador{
+    background-color: #f1747f;
+    position: sticky;
+    top: 50px;
+}
+
+.ingresoBuscador{
+    border: none;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 7fr 3fr;
+    grid-column-gap: 7px;
+    max-width: 768px;
+    margin: auto;
+}
+
+.lupa-buscar{
+    width: 45px;
+    justify-self: end;;   
+}
+
+.input-buscador{
+    border-radius: 6px;
+    height: 2.5rem;
+    padding-left: 10px;
+    outline: none;
+    max-width: 768px;
+    border: 1px solid $color-borde-buscador;
+    box-shadow: 0px 0px 3px 0px $color-oscuro-buscador;
+}
+
+.input-buscador:hover{
+    font-weight: bold;
+}
+
+.btn-buscar{
+    background: $color-boton-buscador;
+    border: 1px solid $color-borde-buscador;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px $color-borde-buscador;
+    height: 2.5rem;
+    color: $color-blanco-buscador;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.btn-buscar:hover{
+    font-weight: bold;
+    background-color: $color-hover-buscador;
+    font-size: 1.3rem ;
+}
+
+.btn-buscar:hover{
+    outline: none;
+}
+.Producto-Mostrado{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:700px){
+    .container-nav-buscador{
+        background-color: #72bdcf;
+        top: 74px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .container-nav-buscador{
+        background-color: #72bdcf;
+        top: 68px;
+    }  
+}
+

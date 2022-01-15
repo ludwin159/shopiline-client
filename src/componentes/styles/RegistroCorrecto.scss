@@ -1,0 +1,60 @@
+$color-fondo-registroCorrecto:#ff9aa2;
+$color-texto-primario-registroCorrecto: white;
+$color-boton-registroCorrecto:#25B4AE;
+$color-boton-registroCorrecto-hover: #23a59f;
+$color-borde-registroCorrecto: #707070;
+.container-imgCheck{
+    text-align: right;
+}
+.imgCheck{
+    width: 80px;
+}
+
+.registro-correcto{
+    min-height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    max-width: 768px;
+    margin: 0 auto 0 auto;
+}
+
+.container-check-title{
+    display: grid;
+    grid-template-columns: 1fr 2fr
+    
+}
+.imgUsuarioCheck{
+    width: 90%;
+    max-width: 400px;
+}
+
+
+.p-registro{
+    color: $color-texto-primario-registroCorrecto;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+
+.boton-regresarInicio{
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    height: 3.2rem;
+    background: $color-boton-registroCorrecto;
+    color: $color-texto-primario-registroCorrecto;
+    font-size: 1.6rem;
+    border: 1px solid $color-borde-registroCorrecto;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 1px $color-borde-registroCorrecto;
+
+}
+.boton-regresarInicio:hover{
+    outline: none;
+    background-color: $color-boton-registroCorrecto-hover;
+    font-weight: bold;
+}
+
